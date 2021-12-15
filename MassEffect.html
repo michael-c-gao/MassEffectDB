@@ -1,0 +1,87 @@
+<html>
+<head>
+       <title>Mass Effect: A Database</title>
+</head>
+
+<body bgcolor="#E6E2EC">
+
+<h3>Connecting to MassEffect using MySQL/PHP</h3>
+
+
+<hr>
+
+<p>
+In Mass Effect, weapon types are restricted based on the characters class, i.e., only specific characters can use specific guns. Please enter the last name of a Normandy Commander, and this query will return the character's useable weapons. Commander Last Name: (Shepard, Anderson)
+<p>
+
+<form action="CommanderWeapons.php" method="POST">
+
+<input type="text" name="state"> <br>
+<input type="submit" value="submit">
+<input type="reset" value="erase">
+</form>
+
+<hr>
+
+<p>
+Does home planet make any difference on flying ability aboard the Normandy? To find out, enter a planet name, and the query will return all capable pilots aboard the Normandy. Planet Name: (Dekuuna, Earth, Kharshan, Palaven, Pluto, Rakhana, Rannoch, Suen, SurKesh, Thessia, Tuchanka) Note: only Earth will return results, due to in-game lore.<p>
+
+<form action="PlanetFlight.php" method="POST">
+
+<input type="text" name="state"> <br>
+<input type="submit" value="submit">
+<input type="reset" value="erase">
+</form>
+
+<hr>
+
+<p>
+In Mass Effect, you travel across the galaxy with a diverse crew consisting of dozens of different species. However, there are just as many species that seek to thwart your adventures. Enter a crewmate last name, and this query will return all enemies of the same species as your desired crewmate. Crewmate last name: (Moreau, Tsoni, Cortez, Shepard, Krios, Vakarian, Zorah, Anderson)
+<p>
+
+<form action="CrewEnemySpecies.php" method="POST">
+
+<input type="text" name="state"> <br>
+<input type="submit" value="submit">
+<input type="reset" value="erase">
+</form>
+
+<hr>
+
+<p>
+It's important a commander be well equiped before going into battle, and this means its important he knows all about his guns. Input a commander's class and the query will return the average damage and ammo capacity of the useable weapon type that the commander can use. Classes : (Adept, Soldier, Vanguard, Engineer, Sentinel, Infiltrator). Note: Since this query is dependent on a commander and there are only two commanders, the only queries that returns results are Adept and Soldier.
+<p>
+
+<form action="WeaponInfo.php" method="POST">
+
+<input type="text" name="state"> <br>
+<input type="submit" value="submit">
+<input type="reset" value="erase">
+</form>
+
+<hr>
+
+<p>
+On planet Earth, there have been studies that show that animals that live in colder environments live longer than those in warmer locales. Is this true amongst the Mass Effect Crew? Enter a temperature in Celcius and the query will return all crewmates who are from planets that are colder than the specified input. For input, Please enter a whole number temperature (Celcius).
+<p>
+
+<form action="PlanetaryLifespan.php" method="POST">
+
+<input type="text" name="state"> <br>
+<input type="submit" value="submit">
+<input type="reset" value="erase">
+</form>
+
+<hr>
+
+<p>
+<a href="MassEffect.txt" >Contents</a>
+of this page.
+
+<p>
+(The <a href="connectionData.txt" >connection data</a>,
+kept separately for security reasons.)
+
+
+</body>
+</html>
